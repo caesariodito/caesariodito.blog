@@ -9,6 +9,15 @@ const nextConfig = {
         pathname: '/caesariodito/blog-posts/main/images/**',
       }
     ]
+  },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: 'https://sesars-journey.super.site/',
+        permanent: true,
+      }
+    ]
   }
 };
 
